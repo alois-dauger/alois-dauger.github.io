@@ -2,18 +2,18 @@ schema: hugoblox/author/v1
 slug: me
 is_owner: true
 name:
-  display: Dr. Alex Johnson
-  given: Alex
-  family: Johnson
+  display: Aloïs Dauger
+  given: Aloïs
+  family: Dauger
   alternate: ''  # Example: 王伟
   pronunciation: ''  # Example: Wáng Wěi
-  pronouns: he/him
+  pronouns: ''
 postnominals:
   - PhD
   - MIEEE
-status:
-  icon: "☕️"
-role: Senior AI Research Scientist
+status: 
+  icon: 
+role: PhD Student in 
 bio: |
   Alex Johnson is a Senior AI Research Scientist at Meta AI. His research
   has been published in top conferences like NeurIPS and ICML, with over
@@ -21,7 +21,7 @@ bio: |
   while ensuring ethical development.
 
 affiliations:
-  - name: Meta AI
+  - name: Sorbonne University
     url: https://ai.meta.com/
 
 links:
