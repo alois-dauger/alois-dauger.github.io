@@ -32,7 +32,7 @@ hugoblox:
   # ────────────────────────────────────────────────────────────────────────────
   theme:
     # Mode: 'light', 'dark', or 'system' (follows OS preference)
-    mode: system
+    mode: light
     # Theme pack: name from data/themes/ or { light: "x", dark: "y" } for mix-and-match
     pack: "coffee"
     # Optional: Override theme pack colors
@@ -45,14 +45,14 @@ hugoblox:
     colors_dark: {}
     # Optional: Semantic surface color overrides
     surfaces:
-      background: ""
-      foreground: ""
+      background: "#9b9ba8" # Compromise between dark (#1e1e2e) and light (#fffbf0)
+      foreground: "#4a4a5e"
       header:
-        background: ""
-        foreground: ""
+        background: "#8a8a99"
+        foreground: "#f5f5f5"
       footer:
-        background: ""
-        foreground: ""
+        background: "#8a8a99"
+        foreground: "#f5f5f5"
 
   # ────────────────────────────────────────────────────────────────────────────
   # TYPOGRAPHY
@@ -185,7 +185,7 @@ hugoblox:
   # ────────────────────────────────────────────────────────────────────────────
   comments:
     enable: false
-    provider: "" # giscus | disqus
+    provider: '' # giscus | disqus
     giscus:
       repo: ""
       repo_id: ""
