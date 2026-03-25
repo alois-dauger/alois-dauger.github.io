@@ -1,0 +1,48 @@
+<style>
+  /* Add subtle texture/gradient effect to match Coffee theme aesthetic */
+  body {
+    background: linear-gradient(135deg, #a8957e 0%, #a89878 25%, #a89080 50%, #a89878 75%, #a8957e 100%);
+    background-size: 400% 400%;
+    animation: subtle-shift 15s ease infinite;
+  }
+  
+  /* Subtle animation for texture effect */
+  @keyframes subtle-shift {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  /* Add additional texture layer with noise-like effect */
+  body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+      repeating-linear-gradient(
+        0deg,
+        rgba(139, 119, 101, 0.02) 0px,
+        rgba(139, 119, 101, 0.02) 1px,
+        transparent 1px,
+        transparent 2px
+      ),
+      repeating-linear-gradient(
+        90deg,
+        rgba(139, 119, 101, 0.02) 0px,
+        rgba(139, 119, 101, 0.02) 1px,
+        transparent 1px,
+        transparent 2px
+      );
+    pointer-events: none;
+    z-index: -1;
+  }
+</style>
