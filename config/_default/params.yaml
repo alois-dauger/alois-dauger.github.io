@@ -46,7 +46,7 @@ hugoblox:
     # Optional: Semantic surface color overrides
     surfaces:
       background: "#a8957e" # Warm brown tone
-      foreground: "#000000" # Black text for body
+      foreground: "#5c453d" # Dark brown
       header:
         background: "#8b7765" # Medium brown
         foreground: "#f5f5f5"
