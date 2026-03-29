@@ -1,8 +1,27 @@
 <style>
-  /* Ensure profile avatar is displayed entirely within its frame */
-  .avatar {
+  /* Display the profile photo in a larger, rectangular frame using source ratio */
+  .resume-biography .avatar-wrapper {
+    width: clamp(220px, 30vw, 300px) !important;
+    height: auto !important;
+    aspect-ratio: 995 / 1162;
+  }
+
+  .resume-biography .avatar {
     width: 100% !important;
     height: 100% !important;
-    object-fit: contain !important;
+    object-fit: cover !important;
   }
 </style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var avatar = document.querySelector(".resume-biography .avatar-wrapper img.avatar");
+    if (!avatar) return;
+
+    avatar.setAttribute("src", "/media/authors/me-portrait.jpeg");
+    avatar.removeAttribute("srcset");
+    avatar.removeAttribute("sizes");
+    avatar.removeAttribute("width");
+    avatar.removeAttribute("height");
+  });
+</script>
