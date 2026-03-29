@@ -25,8 +25,6 @@ links:
   - icon: at-symbol
     url: mailto:alex.johnson@example.com
     label: E-mail Me
-  - icon: brands/x
-    url: https://x.com/example
   - icon: brands/github
     url: https://github.com/example
   - icon: brands/linkedin
