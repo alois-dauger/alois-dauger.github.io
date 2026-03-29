@@ -25,14 +25,16 @@ links:
   - icon: at-symbol
     url: mailto:alex.johnson@example.com
     label: E-mail Me
+  - icon: brands/x
+    url: https://x.com/example
   - icon: brands/github
-    url: https://plmlab.math.cnrs.fr/aloisdauger/adipocytes_modeling
+    url: https://github.com/example
   - icon: brands/linkedin
-    url: https://www.linkedin.com/in/alo%C3%AFs-dauger-3558942a9/
+    url: https://www.linkedin.com/in/example/
   - icon: academicons/google-scholar
-    url: https://scholar.google.com/citations?hl=fr&user=WH5lDkcAAAAJ
+    url: https://scholar.google.com/citations?user=example
   - icon: academicons/orcid
-    url: https://orcid.org/0009-0000-5093-3771
+    url: https://orcid.org/0000-0002-1825-0097
 
 interests:
   - Large Language Models
