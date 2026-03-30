@@ -11,4 +11,7 @@ hugoblox:
 publication_types:
   - 'article-journal'
 publication: '*Mathematical Biosciences*'
+links:
+  - type: code
+    url: https://plmlab.math.cnrs.fr/aloisdauger/adipocytes_modeling
 ---
