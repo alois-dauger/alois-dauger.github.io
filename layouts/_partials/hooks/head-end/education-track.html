@@ -1,0 +1,33 @@
+<style>
+  .education-track-line {
+    margin-top: 0.2rem;
+    margin-bottom: 0.35rem;
+    font-size: 0.9rem;
+    line-height: 1.35;
+    color: #6b7280;
+  }
+
+  .dark .education-track-line {
+    color: #9ca3af;
+  }
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var degreeNodes = document.querySelectorAll(".resume-biography p.text-xl.font-bold");
+
+    degreeNodes.forEach(function (node) {
+      var degreeText = (node.textContent || "").trim();
+      if (degreeText !== "Master in Integrative biology and Physiology") return;
+
+      var exists = node.parentElement.querySelector(".education-track-line");
+      if (exists) return;
+
+      var track = document.createElement("p");
+      track.className = "education-track-line";
+      track.textContent = "Track: Modelling and Data Analysis";
+
+      node.insertAdjacentElement("afterend", track);
+    });
+  });
+</script>
