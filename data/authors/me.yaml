@@ -42,24 +42,20 @@ interests:
   - AI Ethics
 
 education:
-  - degree: PhD Computer Science
-    institution: Stanford University
-    start: 2015-09-01
-    end: 2019-06-30
+  - degree: PhD Mathematical Biology
+    institution: Sorbonne University
+    start: 2023-10-01
+    end: 2026-10-01
+  - degree: "Master: Integrative biology and Physiology"
+    institution: Sorbonne University
+    start: 2021-09-01
+    end: 2023-09-01
     summary: |
-      Thesis on scaling laws for neural language models. Published 5 papers in NeurIPS and ICML.
-    button:
-      text: Download dissertation
-      url: /resume.pdf
-      icon: hero/arrow-down-tray
-  - degree: MS Computer Science
-    institution: Carnegie Mellon University
-    start: 2013-09-01
-    end: 2015-05-31
-  - degree: BS Computer Science
-    institution: MIT
-    start: 2009-09-01
-    end: 2013-05-31
+      Track: Modelling and Data Analysis
+  - degree: Bachelor in Life Sciences
+    institution: Sorbonne University
+    start: 2019-09-01
+    end: 2021-09-01
 
 experience:
   - role: Senior AI Research Scientist
