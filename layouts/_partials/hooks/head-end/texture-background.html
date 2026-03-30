@@ -1,25 +1,29 @@
 <style>
-  /* Add subtle texture/gradient effect to match Coffee theme aesthetic */
+  /* Stronger dynamic gradient background */
   body {
-    background: linear-gradient(135deg, #a8957e 0%, #a89878 25%, #a89080 50%, #a89878 75%, #a8957e 100%);
-    background-size: 400% 400%;
-    animation: subtle-shift 15s ease infinite;
+    background:
+      radial-gradient(circle at 15% 20%, rgba(199, 165, 131, 0.33) 0%, transparent 42%),
+      radial-gradient(circle at 85% 25%, rgba(176, 145, 114, 0.30) 0%, transparent 38%),
+      linear-gradient(140deg, #9f8a72 0%, #b39a81 25%, #9a8168 50%, #b29b83 75%, #947c64 100%);
+    background-size: 170% 170%, 160% 160%, 320% 320%;
+    animation: background-shift 9s ease-in-out infinite;
+    position: relative;
   }
-  
-  /* Subtle animation for texture effect */
-  @keyframes subtle-shift {
+
+  /* Main gradient movement */
+  @keyframes background-shift {
     0% {
-      background-position: 0% 50%;
+      background-position: 0% 45%, 100% 55%, 0% 50%;
     }
     50% {
-      background-position: 100% 50%;
+      background-position: 100% 55%, 0% 45%, 100% 50%;
     }
     100% {
-      background-position: 0% 50%;
+      background-position: 0% 45%, 100% 55%, 0% 50%;
     }
   }
-  
-  /* Add additional texture layer with noise-like effect */
+
+  /* Fine moving texture layer */
   body::before {
     content: '';
     position: fixed;
@@ -30,19 +34,70 @@
     background-image: 
       repeating-linear-gradient(
         0deg,
-        rgba(139, 119, 101, 0.02) 0px,
-        rgba(139, 119, 101, 0.02) 1px,
+        rgba(126, 106, 86, 0.06) 0px,
+        rgba(126, 106, 86, 0.06) 1px,
         transparent 1px,
-        transparent 2px
+        transparent 3px
       ),
       repeating-linear-gradient(
         90deg,
-        rgba(139, 119, 101, 0.02) 0px,
-        rgba(139, 119, 101, 0.02) 1px,
+        rgba(126, 106, 86, 0.045) 0px,
+        rgba(126, 106, 86, 0.045) 1px,
         transparent 1px,
-        transparent 2px
+        transparent 3px
       );
+    background-size: 3px 3px, 3px 3px;
+    animation: grain-drift 13s linear infinite;
     pointer-events: none;
-    z-index: -1;
+    z-index: -2;
+  }
+
+  /* Large soft color wash moving independently */
+  body::after {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background:
+      radial-gradient(circle at 30% 80%, rgba(214, 176, 140, 0.18) 0%, transparent 40%),
+      radial-gradient(circle at 70% 20%, rgba(150, 121, 92, 0.14) 0%, transparent 45%);
+    transform: translate3d(0, 0, 0) scale(1);
+    animation: color-wash 11s ease-in-out infinite;
+    pointer-events: none;
+    z-index: -3;
+  }
+
+  @keyframes grain-drift {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+    50% {
+      transform: translate3d(-12px, 8px, 0);
+    }
+    100% {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  @keyframes color-wash {
+    0% {
+      transform: translate3d(0, 0, 0) scale(1);
+      opacity: 0.8;
+    }
+    50% {
+      transform: translate3d(2%, -2%, 0) scale(1.05);
+      opacity: 1;
+    }
+    100% {
+      transform: translate3d(0, 0, 0) scale(1);
+      opacity: 0.8;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    body,
+    body::before,
+    body::after {
+      animation: none !important;
+    }
   }
 </style>
