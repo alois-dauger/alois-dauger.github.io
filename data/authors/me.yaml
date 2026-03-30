@@ -17,7 +17,7 @@ status:
 role: PhD Student in Mathematical Biology
 
 bio: |
-  PhD Student in applied mathematics to biology at Sorbonne University (Paris, France). I conduct my research under the supervision of [Hedi Soula](https://sites.google.com/site/hsoula/) and [Chloé Audebert](https://www.ljll.fr/audebertc/supervision.html), within the [Jacques-Louis Lions laboratory](https://www.ljll.fr) and the [Nutriomics laboratory](https://www.nutriomics.org). My work focuses on the development of mathematical models to describe the size distribution of adipocytes as well as their population dynamics, with a quantitative and integrative approach to biological phenomena. I am particularly interested in the biological interpretation of mathematical models and aim to contribute to the advancement of collective and public knowledge in this field.
+  PhD Student in applied mathematics to biology at Sorbonne University (Paris, France). I conduct my research under the supervision of [Hedi Soula](https://sites.google.com/site/hsoula/) and [Chloé Audebert](https://www.ljll.fr/audebertc/index.html), within the [Jacques-Louis Lions laboratory](https://www.ljll.fr) and the [Nutriomics laboratory](https://www.nutriomics.org). My work focuses on the development of mathematical models to describe the size distribution of adipocytes as well as their population dynamics, with a quantitative and integrative approach to biological phenomena. I am particularly interested in the biological interpretation of mathematical models and aim to contribute to the advancement of collective and public knowledge in this field.
 
 affiliations:
   - name: Sorbonne University, Paris
@@ -48,6 +48,8 @@ education:
     institution: Sorbonne University
     start: 2023-10-01
     end: 2026-10-01
+    summary: |
+      Title: Adipocyte size dynamics modeling during weight changes
   - degree: Master in Integrative biology and Physiology
     institution: Sorbonne University
     start: 2021-09-01

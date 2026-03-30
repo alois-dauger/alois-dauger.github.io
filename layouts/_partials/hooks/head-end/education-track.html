@@ -15,17 +15,22 @@
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     var degreeNodes = document.querySelectorAll(".resume-biography p.text-xl.font-bold");
+    var sublinesByDegree = {
+      "PhD Mathematical Biology": "Title: Adipocyte size dynamics modeling during weight changes",
+      "Master in Integrative biology and Physiology": "Track: Modelling and Data Analysis"
+    };
 
     degreeNodes.forEach(function (node) {
       var degreeText = (node.textContent || "").trim();
-      if (degreeText !== "Master in Integrative biology and Physiology") return;
+      var sublineText = sublinesByDegree[degreeText];
+      if (!sublineText) return;
 
       var exists = node.parentElement.querySelector(".education-track-line");
       if (exists) return;
 
       var track = document.createElement("p");
       track.className = "education-track-line";
-      track.textContent = "Track: Modelling and Data Analysis";
+      track.textContent = sublineText;
 
       node.insertAdjacentElement("afterend", track);
     });
