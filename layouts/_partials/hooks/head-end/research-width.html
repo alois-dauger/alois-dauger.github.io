@@ -1,0 +1,20 @@
+<style>
+  /* Widen only the My Research section on the homepage */
+  #research > div.flex.flex-col.items-center.max-w-prose.mx-auto.gap-3.justify-center.px-6 {
+    max-width: 50rem;
+    width: min(50rem, calc(100vw - 3rem));
+  }
+
+  #research .prose.prose-slate.lg\:prose-xl.dark\:prose-invert.max-w-prose {
+    max-width: none;
+    width: 100%;
+    text-align: justify;
+  }
+
+  @media (min-width: 1024px) {
+    #research > div.flex.flex-col.items-center.max-w-prose.mx-auto.gap-3.justify-center.px-6 {
+      max-width: 59rem;
+      width: min(59rem, calc(100vw - 4rem));
+    }
+  }
+</style>

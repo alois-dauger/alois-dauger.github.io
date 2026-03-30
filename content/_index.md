@@ -38,8 +38,9 @@ sections:
         size: medium # Options: small (150px), medium (200px, default), large (320px), xl (400px), xxl (500px)
         shape: rounded # Options: circle (default), square, rounded
   - block: markdown
+    id: research
     content:
-      title: '📚 My Research'
+      title: 'My Research'
       subtitle: ''
       text: |-
         My research focuses on the mathematical modeling of adipose tissue dynamics in the context of obesity. I investigate how adipocyte size and number evolve, combining biological insights with systems of ordinary differential equations to describe lipid fluxes and cell variability. I am particularly interested in understanding the interplay between hypertrophy and hyperplasia, as well as developing quantitative methods to infer adipocyte number from size distributions, especially during weight changes.
