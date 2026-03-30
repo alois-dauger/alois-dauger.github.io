@@ -1,0 +1,37 @@
+<style>
+  .accent-list-marker {
+    display: none;
+  }
+
+  .prose ul.accent-list li {
+    color: #4a2f20 !important;
+  }
+
+  .prose ul.accent-list li > strong {
+    color: #4a2f20 !important;
+    font-weight: 700 !important;
+  }
+
+  .prose ul.accent-list li .best-award {
+    color: #c8b28a !important;
+    font-weight: 700 !important;
+    display: inline-block;
+    margin-top: 0.1rem;
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var markers = document.querySelectorAll('.accent-list-marker');
+
+    markers.forEach(function (marker) {
+      var markerParagraph = marker.closest('p');
+      if (!markerParagraph) return;
+
+      var list = markerParagraph.nextElementSibling;
+      if (!list || list.tagName !== 'UL') return;
+
+      list.classList.add('accent-list');
+    });
+  });
+</script>

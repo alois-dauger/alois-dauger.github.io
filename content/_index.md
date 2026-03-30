@@ -52,16 +52,6 @@ sections:
   - block: collection
     id: papers
     content:
-      title: Featured Publications
-      filters:
-        folders:
-          - publications
-        featured_only: true
-    design:
-      view: article-grid
-      columns: 2
-  - block: collection
-    content:
       title: Recent Publications
       text: ''
       filters:
@@ -70,44 +60,41 @@ sections:
         exclude_featured: false
     design:
       view: citation
-  - block: collection
-    id: talks
+  - block: markdown
+    id: communications
     content:
-      title: Recent & Upcoming Talks
-      filters:
-        folders:
-          - events
-    design:
-      view: card
-  - block: collection
-    id: news
-    content:
-      title: Recent News
+      title: Communications
       subtitle: ''
-      text: ''
-      # Page type to display. E.g. post, talk, publication...
-      page_type: blog
-      # Choose how many pages you would like to display (0 = all pages)
-      count: 10
-      # Filter on criteria
-      filters:
-        author: ''
-        category: ''
-        tag: ''
-        exclude_featured: false
-        exclude_future: false
-        exclude_past: false
-        publication_type: ''
-      # Choose how many pages you would like to offset by
-      offset: 0
-      # Page order: descending (desc) or ascending (asc) date.
-      order: desc
+      text: |-
+        <span class="accent-list-marker" aria-hidden="true"></span>
+
+        - **JMBS 2023** - Marne-la-Vallee, France, Nov 2023 ; Poster presentation
+        - **AFERO 2024** - Nantes, France, Jan 2024 ; Poster presentation<br><span class="best-award">Best Poster Award</span>
+        - **JED-ED394** - Paris, France, Jun 2024 ; Poster presentation
+        - **JMBS 2024** - Nantes, France, Jun 2024 ; Poster presentation
+        - **ECMTB 2024** - Toledo, Spain ; Poster presentation<br><span class="best-award">Best Poster Award</span>
+        - **MATIDAYS** - Paris, France, Nov 2024 ; Oral presentation
+        - **JED-ED394** - Paris, France, Jun 2025 ; Poster presentation<br><span class="best-award">Best Poster Award</span>
+        - **JMBS 2025** - Montpellier, France, Nov 2025 ; Oral presentation
+        - **Global Health Winter School (UNAM-SU)** - Mexico, Dec 2025 ; Oral presentation
+        - **CMDO/AFERO Seminar** - Paris, France, Jan 2026 ; Oral presentation
     design:
-      # Choose a layout view
-      view: card
-      # Reduce spacing
-      spacing:
-        padding: [0, 0, 0, 0]
+      columns: '1'
+  - block: markdown
+    id: teaching
+    content:
+      title: Teaching
+      subtitle: ''
+      text: |-
+        <span class="accent-list-marker" aria-hidden="true"></span>
+
+        - **Mathematics for Biology** - Undergraduate Year 2 (L2)
+        - **Statistics for Biology** - Undergraduate Year 2 (L2)
+        - **Mathematics for Biology** - Undergraduate Year 3 (L3)
+        - **Statistics for Biology** - Undergraduate Year 3 (L3)
+        - **Python for Physiology** - Master's Year 1 (M1)
+    design:
+      columns: '1'
   - block: cta-card
     demo: true # Only display this section in the HugoBlox Kit demo site
     content:
