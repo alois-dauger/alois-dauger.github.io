@@ -15,13 +15,29 @@
 
 <script>
   document.addEventListener("DOMContentLoaded", function () {
-    var avatar = document.querySelector(".resume-biography .avatar-wrapper img.avatar");
-    if (!avatar) return;
+    var biography = document.querySelector(".resume-biography");
+    if (!biography) return;
 
-    avatar.setAttribute("src", "/media/authors/me-portrait.jpeg");
-    avatar.removeAttribute("srcset");
-    avatar.removeAttribute("sizes");
-    avatar.removeAttribute("width");
-    avatar.removeAttribute("height");
+    var avatarImg = biography.querySelector(".avatar-wrapper img.avatar");
+    if (avatarImg) {
+      avatarImg.setAttribute("src", "/media/authors/mao2.jpeg");
+      return;
+    }
+
+    // If the theme omits the avatar block, inject it before the profile text.
+    var leftColumn = biography.querySelector(".md\\:col-span-4");
+    var headingBlock = biography.querySelector(".md\\:col-span-4 .space-y-3");
+    if (!leftColumn || !headingBlock) return;
+
+    var wrapper = document.createElement("div");
+    wrapper.className = "avatar-wrapper mb-4";
+
+    var img = document.createElement("img");
+    img.className = "avatar rounded-lg border-4 border-white shadow-2xl";
+    img.src = "/media/authors/mao2.jpeg";
+    img.alt = "Alois Dauger";
+
+    wrapper.appendChild(img);
+    leftColumn.insertBefore(wrapper, headingBlock);
   });
 </script>
