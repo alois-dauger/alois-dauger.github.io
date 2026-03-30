@@ -1,7 +1,7 @@
 ---
 title: 'Adipocyte size distribution: Mathematical model of a tissue property'
 authors:
-  - Aloïs Dauger
+  - me
   - Hedi Soula
   - Chloe Audebert
 date: '2025-06-01'

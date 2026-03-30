@@ -2,7 +2,7 @@
 title: 'Rapid cell turnover to model adipocyte size distribution'
 authors:
   - Louis Fostier
-  - Aloïs Dauger
+  - me
   - Romain Yvinec
   - Magali Ribot
   - Chloe Audebert

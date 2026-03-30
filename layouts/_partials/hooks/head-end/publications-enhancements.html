@@ -1,0 +1,61 @@
+<style>
+  .pub-list-item.view-citation {
+    font-size: 1.11rem;
+    line-height: 1.65;
+  }
+
+  .pub-list-item .li-cite-author strong.author-self {
+    font-weight: 700;
+  }
+
+  .pub-list-item.view-citation .flex.flex-wrap.space-x-3 {
+    margin-top: 0.45rem;
+    row-gap: 0.4rem;
+  }
+
+  .pub-list-item.view-citation .hb-attachment-link,
+  .pub-list-item.view-citation .hb-attachment-link:hover,
+  .pub-list-item.view-citation .hb-attachment-link:focus,
+  .pub-list-item.view-citation .js-cite-clipboard,
+  .pub-list-item.view-citation .js-cite-clipboard:hover,
+  .pub-list-item.view-citation .js-cite-clipboard:focus {
+    color: #c8b28a !important;
+    font-size: 0.98rem !important;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var publicationMeta = {
+      '/publications/rapid-cell-turnover-to-model-adipocyte-size-distribution/': {
+        slug: 'rapid-cell-turnover-to-model-adipocyte-size-distribution'
+      },
+      '/publications/adipocyte-size-distribution-mathematical-model-of-a-tissue-p/': {
+        slug: 'adipocyte-size-distribution-mathematical-model-of-a-tissue-p'
+      }
+    };
+
+    // Bold the site owner's name in every publication author list.
+    document.querySelectorAll('.pub-list-item .li-cite-author').forEach(function (authorsEl) {
+      authorsEl.innerHTML = authorsEl.innerHTML.replace(/Aloi?s\sDauger/g, '<strong class="author-self">Alois Dauger</strong>');
+      authorsEl.innerHTML = authorsEl.innerHTML.replace(/Aloïs\sDauger/g, '<strong class="author-self">Aloïs Dauger</strong>');
+    });
+
+    document.querySelectorAll('.pub-list-item.view-citation').forEach(function (item) {
+      var titleLink = item.querySelector('a.underline[href^="/publications/"]');
+      if (!titleLink) return;
+
+      var meta = publicationMeta[titleLink.getAttribute('href')];
+      if (!meta) return;
+
+      item.querySelectorAll('.hb-attachment-link').forEach(function (link) {
+        if (link.textContent && link.textContent.trim() === 'DOI') {
+          link.innerHTML = '<svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block; vertical-align:-0.1em; margin-right:0.28em;"><path d="M10 13a5 5 0 0 0 7.07 0l3.54-3.54a5 5 0 1 0-7.07-7.07L11 4"/><path d="M14 11a5 5 0 0 0-7.07 0L3.39 14.54a5 5 0 1 0 7.07 7.07L13 20"/></svg>URL';
+          link.setAttribute('aria-label', 'URL de l\'article');
+        }
+      });
+    });
+  });
+</script>

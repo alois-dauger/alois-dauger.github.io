@@ -52,7 +52,7 @@ sections:
   - block: collection
     id: papers
     content:
-      title: Recent Publications
+      title: Publications and Pre-prints
       text: ''
       filters:
         folders:
