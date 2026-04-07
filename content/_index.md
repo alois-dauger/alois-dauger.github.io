@@ -65,16 +65,17 @@ sections:
       text: |-
         <span class="accent-list-marker" aria-hidden="true"></span>
 
-        - **JMBS 2023** - Marne-la-Vallee, France, Nov 2023 ; Poster presentation
-        - **AFERO 2024** - Nantes, France, Jan 2024 ; Poster presentation<br><span class="best-award">Best Poster Award</span>
-        - **JED-ED394** - Paris, France, Jun 2024 ; Poster presentation
-        - **JMBS 2024** - Nantes, France, Jun 2024 ; Poster presentation
-        - **ECMTB 2024** - Toledo, Spain ; Poster presentation<br><span class="best-award">Best Poster Award</span>
-        - **MATIDAYS** - Paris, France, Nov 2024 ; Oral presentation
-        - **JED-ED394** - Paris, France, Jun 2025 ; Poster presentation<br><span class="best-award">Best Poster Award</span>
-        - **JMBS 2025** - Montpellier, France, Nov 2025 ; Oral presentation
-        - **Global Health Winter School (UNAM-SU)** - Mexico, Dec 2025 ; Oral presentation
-        - **CMDO/AFERO Seminar** - Paris, France, Jan 2026 ; Oral presentation
+        - **CMDO/AFERO Seminar** - <u>Paris</u>, France, Jan 2026 ; Oral presentation
+        - **Global Health Winter School (UNAM-SU)** - <u>Mexico</u>, Dec 2025 ; Oral presentation
+        - **JMBS 2025** - <u>Montpellier</u>, France, Nov 2025 ; Oral presentation
+        - **JED-ED394** - <u>Paris</u>, France, Jun 2025 ; Poster presentation<br><span class="best-award">Best Poster Award</span>
+        - **LJLL-GTT** - <u>Paris</u>, France, Feb 2025 ; Oral presentation
+        - **MATIDAYS** - <u>Paris</u>, France, Nov 2024 ; Oral presentation
+        - **ECMTB 2024** - <u>Toledo</u>, Spain ; Poster presentation<br><span class="best-award">Best Poster Award</span>
+        - **JMBS 2024** - <u>Nantes</u>, France, Jun 2024 ; Poster presentation
+        - **JED-ED394** - <u>Paris</u>, France, Jun 2024 ; Poster presentation
+        - **AFERO 2024** - <u>Nantes</u>, France, Jan 2024 ; Poster presentation<br><span class="best-award">Best Poster Award</span>
+        - **JMBS 2023** - <u>Marne-la-Vallee</u>, France, Nov 2023 ; Poster presentation
     design:
       columns: '1'
   - block: markdown
