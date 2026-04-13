@@ -21,7 +21,7 @@ hugoblox:
     # Short tagline displayed on your site
     tagline: "PhD Student in Mathematical Biology"
     # Site meta description for search engines and social sharing
-    description: "Interested in adipose tissue and physiological modelling "
+    description: "PhD student in mathematical biology at Sorbonne University, focused on adipocyte size distribution modeling, obesity dynamics, and quantitative physiology."
     # Social accounts (used for meta tags like Twitter Cards)
     social:
       twitter: "MakeOwnable" # Twitter/X handle for Twitter Cards (without @)
@@ -129,7 +129,7 @@ hugoblox:
   # ────────────────────────────────────────────────────────────────────────────
   seo:
     # Browser tab title override (defaults to identity.name if not set)
-    title: ""
+    title: "Alois Dauger | PhD Student in Mathematical Biology"
     # For local_business identity type only
     location:
       address:
@@ -219,7 +219,7 @@ hugoblox:
   # Search engine site verification codes
   # ────────────────────────────────────────────────────────────────────────────
   verification:
-    google: ""
+    google: "TSSJXmx4U39NK912sSb7rXdcDmPazROzDqx2lDpb4Ac"
     bing: ""
     baidu: ""
     yandex: ""
