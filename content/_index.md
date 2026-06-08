@@ -65,6 +65,7 @@ sections:
       text: |-
         <span class="accent-list-marker" aria-hidden="true"></span>
 
+        - **JED-ED394** - <u>Paris</u>, France, Jun 2026 ; Oral presentation<br><span class="best-award">Best Oral Presentation Award</span>
         - **CMDO/AFERO Seminar** - <u>Paris</u>, France, Jan 2026 ; Oral presentation
         - **Global Health Winter School (UNAM-SU)** - <u>Mexico</u>, Dec 2025 ; Oral presentation
         - **JMBS 2025** - <u>Montpellier</u>, France, Nov 2025 ; Oral presentation

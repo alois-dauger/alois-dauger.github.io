@@ -110,3 +110,8 @@ awards:
     date: "2022-12-01"
     summary: Awarded for groundbreaking work on efficient training of large models.
     icon: hero/trophy
+  - title: JED-ED394
+    awarder: Best Oral Presentation Award
+    date: "2026-06-01"
+    summary: Paris, France; Oral presentation.
+    icon: hero/trophy
